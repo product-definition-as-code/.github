@@ -36,4 +36,4 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 ## Status
 
-The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.9 (request for comments)**: ten chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress. Founding supporter: [Plain Concepts](https://www.plainconcepts.com).
+The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.9 (request for comments)**: ten chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress.
