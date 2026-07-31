@@ -23,7 +23,7 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 | Repository | What it is |
 | --- | --- |
-| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification: normative, versioned, RFC-2119. Plus the manifesto and the conformance corpus. |
+| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.9 RFC): ten normative chapters, the manifesto, governance and the conformance corpus. |
 | [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | Validate any repository against the spec: CLI, GitHub Action and conformance badge. |
 
 **Reference implementation:** [ProductShape](https://github.com/juangcarmona/productshape) ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). ProductShape is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
@@ -31,9 +31,9 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 ## Start here
 
 - [The founding article](https://jgcarmona.com/en/product-definition-as-code/): why the bottleneck moved left, and what to do about it.
-- [The manifesto](https://github.com/juangcarmona/productshape/blob/main/docs/manifesto.md): the position in full.
+- [The manifesto](https://github.com/product-definition-as-code/spec/blob/main/MANIFESTO.md): four values, ten principles, the position in full. You can [sign it](https://github.com/product-definition-as-code/spec/blob/main/SIGNATORIES.md).
 - Try it in two minutes: `npx @prodshape/cli init --ai claude --sdd openspec`
 
 ## Status
 
-The specification is being extracted from the reference implementation and will be published here as **v0.9 (request for comments)**. Governance, RFC process and the conformance suite land with it. Founding supporter: [Plain Concepts](https://www.plainconcepts.com).
+The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.9 (request for comments)**: ten chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress. Founding supporter: [Plain Concepts](https://www.plainconcepts.com).
