@@ -15,15 +15,15 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 1. Product knowledge lives close to the software, inside the repository.
 2. Markdown is the canonical representation; the graph is compiled from it, never authored by hand.
 3. Every artifact has a stable, immutable identity. Relationships are explicit and machine-readable.
-4. Nothing changes the product model silently: the baseline changes through exactly one operation, a human merging a validated proposed revision.
+4. Nothing changes the product model silently: the definition changes through exactly one mechanism, an explicit Product Change, approved by a human and accepted through review.
 5. Backlog items are projections of accepted product intent, not the source of truth.
-6. Delivery consumes canonical product knowledge through citations and reports reality back as proposed revisions; it never owns the product definition.
+6. Delivery consumes canonical product knowledge through citations and reports reality back as proposed Product Changes; it never owns the product definition.
 
 ## Repositories
 
 | Repository | What it is |
 | --- | --- |
-| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): eight normative chapters, the manifesto, governance and the conformance corpus. |
+| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): nine normative chapters, the manifesto, governance and the conformance corpus. |
 | [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | Planned: an independent conformance runner (CLI, GitHub Action and badge). Not usable yet; the conformance corpus comes first. |
 
 **Reference implementation:** [ProductShape](https://github.com/juangcarmona/productshape) ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). ProductShape is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
@@ -36,6 +36,6 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 ## Status
 
-The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: eight chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress. The version number says what it is: an early draft, weeks old, not a near-final standard.
+The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress. The version number says what it is: an early draft, weeks old, not a near-final standard.
 
 The honest picture of where every surface stands, and the gates required before v1 may call itself a standard, is in the [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md). What the methodology cannot claim yet is named in [known limits](https://pdac.dev/known-limits/).
