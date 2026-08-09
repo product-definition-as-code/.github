@@ -36,6 +36,6 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 ## Status
 
-The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, conformance tests in progress. The version number says what it is: an early draft, weeks old, not a near-final standard.
+The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, and the conformance tests scaffolded, not yet a complete normative set. The version number says what it is: an early draft, weeks old, not a near-final standard.
 
 The honest picture of where every surface stands, and the gates required before v1 may call itself a standard, is in the [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md). What the methodology cannot claim yet is named in [known limits](https://pdac.dev/known-limits/).
