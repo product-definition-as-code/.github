@@ -24,9 +24,9 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 | Repository | What it is |
 | --- | --- |
 | [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): nine normative chapters, the manifesto, governance and the conformance tests. |
-| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | An independent conformance runner (CLI, GitHub Action and badge), published on npm and usable. What is still in progress is the conformance tests, which are scaffolded, not yet a complete normative set. |
+| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | An independent conformance runner (CLI), published on npm and usable. A GitHub Action and badge are planned. The conformance tests are scaffolded, not yet a complete normative set. |
 
-**Reference implementation:** [ProductShape](https://github.com/juangcarmona/productshape) ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). ProductShape, the reference implementation of Product Definition as Code. ProductShape is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
+[ProductShape](https://github.com/juangcarmona/productshape), the reference implementation of Product Definition as Code ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). It is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
 
 ## Start here
 
