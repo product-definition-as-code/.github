@@ -23,10 +23,10 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 | Repository | What it is |
 | --- | --- |
-| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): nine normative chapters, the manifesto, governance and the conformance corpus. |
-| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | Planned: an independent conformance runner (CLI, GitHub Action and badge). Not usable yet; the conformance corpus comes first. |
+| [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): nine normative chapters, the manifesto, governance and the conformance tests. |
+| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | An independent conformance runner (CLI, GitHub Action and badge), published on npm and usable. What is still in progress is the conformance tests, which are scaffolded, not yet a complete normative set. |
 
-**Reference implementation:** [ProductShape](https://github.com/juangcarmona/productshape) ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). ProductShape is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
+**Reference implementation:** [ProductShape](https://github.com/juangcarmona/productshape) ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). ProductShape, the reference implementation of Product Definition as Code. ProductShape is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
 
 ## Start here
 
@@ -36,6 +36,6 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 
 ## Status
 
-The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, conformance corpus in progress. The version number says what it is: an early draft, weeks old, not a near-final standard.
+The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, conformance tests in progress. The version number says what it is: an early draft, weeks old, not a near-final standard.
 
 The honest picture of where every surface stands, and the gates required before v1 may call itself a standard, is in the [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md). What the methodology cannot claim yet is named in [known limits](https://pdac.dev/known-limits/).
