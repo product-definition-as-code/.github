@@ -6,9 +6,20 @@
 
 **Your product, defined like code.**
 
+A delivery spec cites a product rule by ID and content digest. Someone changes the rule. The next verification run flags the spec, and nobody had to remember to check:
+
+```console
+$ prodshape citations verify
+stale	BR-REFUND-001	openspec/checkout-flow.citations.yaml:1
+warning PRODUCT061 openspec/checkout-flow.citations.yaml [BR-REFUND-001]: Citation of 'BR-REFUND-001' is stale: canonical content changed since the citation was recorded
+1 citation(s): 0 current, 1 stale, 0 tampered, 0 unresolved
+```
+
+That is the citation contract, the delivery boundary of PDaC: drift between what delivery believes and what the product says becomes machine-detectable instead of silent. [See it in 30 seconds on pdac.dev](https://pdac.dev/), or run it yourself with `npm install -g @prodshape/cli`.
+
 PDaC is an open methodology for the upstream layer of the AI-SDLC. It models product knowledge as a versioned, validated graph of small, related Markdown artifacts: actors, journeys, use cases, business rules, domain language and requirements. Humans and AI agents consume the same canonical model, and every implementation increment traces back to the product knowledge it serves.
 
-While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how a single change gets built, PDaC defines what the product **is**: the graph that outlives every spec. The citation contract at its boundary is delivery-neutral: the same citations brief an SDD framework, an AI coding agent, or a human team working from the backlog.
+While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how a single change gets built, PDaC defines what the product **is**: the graph that outlives every spec. The citation contract is delivery-neutral: the same citations brief an SDD framework, an AI coding agent, or a human team working from the backlog.
 
 ## The core principles
 
@@ -24,18 +35,21 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 | Repository | What it is |
 | --- | --- |
 | [`spec`](https://github.com/product-definition-as-code/spec) | The PDaC specification (v0.1 RFC): nine normative chapters, the manifesto, governance and the conformance tests. |
-| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | An independent conformance runner (CLI), published on npm and usable. A GitHub Action and badge are planned. The conformance tests are scaffolded, not yet a complete normative set. |
+| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | An independent conformance runner (CLI), published on npm. It runs the conformance tests, which are published and runnable, not yet a complete normative set. A GitHub Action and badge are planned. |
+| [ProductShape](https://github.com/juangcarmona/productshape) | The reference implementation ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). Implements the citation contract and passes the published conformance tests. It is to PDaC what OpenSpec is to Spec-Driven Development. |
+| [`product-definition-as-code.github.io`](https://github.com/product-definition-as-code/product-definition-as-code.github.io) | The source of [pdac.dev](https://pdac.dev/): the manifesto, the spec chapters and the diagrams, rebuilt on every spec change. |
 
-[ProductShape](https://github.com/juangcarmona/productshape), the reference implementation of Product Definition as Code ([`@prodshape/cli`](https://www.npmjs.com/package/@prodshape/cli) on npm). It is to PDaC what OpenSpec is to Spec-Driven Development. The spec welcomes further implementations; if you are building one, open an issue in `spec`.
+The spec welcomes further implementations; if you are building one, open an issue in `spec`.
 
 ## Start here
 
+- [See it in 30 seconds](https://pdac.dev/): a citation catches drift on its own.
+- [Add PDaC to an existing OpenSpec repository](https://github.com/juangcarmona/productshape/blob/main/docs/adoption/existing-openspec-repository.md): the quickstart.
 - [The founding article](https://jgcarmona.com/en/product-definition-as-code/): why the bottleneck moved left, and what to do about it.
 - [The manifesto](https://github.com/product-definition-as-code/spec/blob/main/MANIFESTO.md): four values, ten principles, the position in full. You can [sign it](https://github.com/product-definition-as-code/spec/blob/main/SIGNATORIES.md).
-- Start with the manifesto and the spec; the reference implementation is being updated to the citation contract.
 
 ## Status
 
-The specification skeleton is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, and the conformance tests scaffolded, not yet a complete normative set. The version number says what it is: an early draft, weeks old, not a near-final standard.
+The specification is live in [`spec`](https://github.com/product-definition-as-code/spec) as **v0.1 (request for comments)**: nine chapters extracted from the reference implementation, governance and RFC process in place, and the conformance tests published and runnable, not yet a complete normative set. The reference implementation passes every published case. The version number says what it is: an early draft, weeks old, not a near-final standard.
 
 The honest picture of where every surface stands, and the gates required before v1 may call itself a standard, is in the [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md). What the methodology cannot claim yet is named in [known limits](https://pdac.dev/known-limits/).
