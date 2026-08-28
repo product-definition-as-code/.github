@@ -36,11 +36,11 @@ While Spec-Driven Development tools like OpenSpec, Spec Kit and Kiro define how 
 | --- | --- |
 | [`spec`](https://github.com/product-definition-as-code/spec) | Defines the PDaC model, relationships, citations, Product Change lifecycle and implementation requirements. It also publishes the conformance tests. |
 | [ProductShape](https://github.com/juangcarmona/productshape) | The reference implementation of Product Definition as Code: a CLI for creating, checking, changing, exploring and citing a product definition. |
-| [`pdac-lint`](https://github.com/product-definition-as-code/pdac-lint) | Runs the published conformance tests against a PDaC implementation. It checks implementations, not product repositories. |
+| [`pdac-conformance`](https://github.com/product-definition-as-code/pdac-conformance) | Runs the published conformance tests against a PDaC implementation. It checks implementations, not product repositories. |
 | [`product-definition-as-code.github.io`](https://github.com/product-definition-as-code/product-definition-as-code.github.io) | Publishes [pdac.dev](https://pdac.dev/), the public entry point for the method, diagrams and specification pages. |
 
 The spec welcomes further implementations; if you are building one, open an issue in `spec`.
 
 ## Status
 
-PDaC is a **v0.1 request for comments**, not a final standard. The conformance tests are runnable — the reference implementation passes every published case — but they are not yet a complete normative set. The [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md) records what is complete, and [known limits](https://pdac.dev/known-limits/) states what the project cannot claim yet.
+PDaC is a **v0.2.0 request for comments**, released on 2026-08-28 and not a final standard. The conformance tests are published and runnable, but they are not yet a complete normative set. ProductShape remains the reference implementation; v0.2 implementation evidence and independent adoption remain open maturity gates. The [maturity matrix](https://github.com/product-definition-as-code/spec/blob/main/MATURITY.md) records what is complete, and [known limits](https://pdac.dev/known-limits/) states what the project cannot claim yet.
