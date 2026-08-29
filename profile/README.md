@@ -4,7 +4,7 @@
 
 # Product Definition as Code (PDaC)
 
-**Your product,**  
+**Your product,**<br>
 **defined like code.**
 
 Product Definition as Code keeps the agreed product definition in versioned Markdown that delivery work cites instead of restating.
