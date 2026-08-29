@@ -8,7 +8,7 @@
 
 Product Definition as Code keeps the agreed product definition in versioned Markdown that delivery work cites instead of restating.
 
-The definition lives as small, related Markdown files — actors, journeys, use cases, business rules, domain terms, requirements — compiled into a validated product graph that humans and AI agents read alike. It changes only through an explicit Product Change, reviewed and accepted by a human. Consumer documents (SDD specs, tasks, agent prompts) cite the exact product text they rely on by stable ID and content digest, and when cited text changes, tools flag every recorded citation for review: documentation drift is detected instead of silent. Deterministic tools check structure and references, never truth; people decide what is true and what should change.
+The definition lives in small, related Markdown files: actors, journeys, use cases, business rules, domain terms and requirements. Together they form a validated product graph that humans and AI agents can read alike. It changes only through an explicit Product Change, reviewed and accepted by a human. Consumer documents such as SDD specs, tasks and agent prompts cite the exact product text they rely on by stable ID and content digest. When cited text changes, tools flag every recorded citation for review, so documentation drift is detected instead of remaining silent. Deterministic tools check structure and references, never truth. People decide what is true and what should change.
 
 A delivery spec cites a product rule. Someone changes the rule. The next verification run flags the spec, and nobody had to remember to check:
 
